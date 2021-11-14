@@ -24,7 +24,7 @@ document.querySelector("#faster").addEventListener("click", function () {
 	var vid = document.getElementById("player1");
 
 	function setPlaySpeed() {
-		vid.playbackRate *= 1.95;
+		vid.playbackRate *= 1.05;
 		console.log("New speed is " + vid.playbackRate)
 	}
 	setPlaySpeed();
@@ -114,7 +114,7 @@ document.querySelector("#orig").addEventListener("click", function () {
 		document.getElementById("player1").style.width = "90%";
 		document.getElementById("player1").style.height = "360px";
 		document.getElementById("player1").style.border = "2px solid black";
-		document.getElementById("player1").style.borderRadius = "0px";
+		document.getElementById("player1").style.borderRadius = "px";
 	}
 	noStyle();
 });
