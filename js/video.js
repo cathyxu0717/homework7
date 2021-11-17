@@ -93,29 +93,12 @@ document.querySelector("#slider").addEventListener("click", function () {
 });
 
 document.querySelector("#vintage").addEventListener("click", function () {
-	var vid = document.getElementById("player1");
-
-	function oldSchool() {
-		document.getElementById("player1").style.filter = "grayscale(100%)";
-		document.getElementById("player1").style.width = "640px";
-		document.getElementById("player1").style.height = "500px";
-		document.getElementById("player1").style.border = "double";
-		document.getElementById("player1").style.borderRadius = "25px";
-
-	}
-	oldSchool();
+	var elements = document.getElementsByClassName("video")
+	elements[0].className = "oldSchool";
 });
 
 document.querySelector("#orig").addEventListener("click", function () {
-	var vid = document.getElementById("player1");
-
-	function noStyle() {
-		document.getElementById("player1").style.filter = "none";
-		document.getElementById("player1").style.width = "90%";
-		document.getElementById("player1").style.height = "360px";
-		document.getElementById("player1").style.border = "2px solid black";
-		document.getElementById("player1").style.borderRadius = "px";
-	}
-	noStyle();
+	var elements = document.getElementsByClassName("oldSchool")
+	elements[0].className = "video";
 });
 
